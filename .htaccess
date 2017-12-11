@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Панель администратора"
+AuthUserFile /var/www/pole-sport.loc/admin/.htpasswd
+Require valid-user

@@ -6,7 +6,6 @@ require_once("config.php");
 require_once("Image.php");
 
 use mysqli;
-use app\Image;
 
 class DBUtils
 {
@@ -14,14 +13,11 @@ class DBUtils
     {
         $mysqli = new mysqli(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB);
 
-        if ($mysqli->connect_errno) {
+        if ($mysqli->connect_errno)
             echo "Не удалось подключиться к MySQL: " . $mysqli->connect_error;
-        }
 
         if(!$mysqli->set_charset("utf8"))
-        {
             echo "Не удалось установить кодировку utf8: " . $mysqli->error;
-        }
 
         return $mysqli;
     }
@@ -41,9 +37,7 @@ class DBUtils
 
         $images = [];
         while($row = $result->fetch_assoc())
-        {
             $images[] = new Image($row['id'], $row['src'], $row['alt']);
-        }
 
         $mysqli->close();
         return $images;
@@ -96,9 +90,7 @@ class DBUtils
     {
         // If image don't changed
         if($src == null)
-        {
             $query = "UPDATE images SET alt='$alt' WHERE id=$id;";
-        }
         // If image changed
         else
         {
