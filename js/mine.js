@@ -1,10 +1,5 @@
 $('.carousel').carousel();
 
-$("#carousel-example-generic .carousel-indicators p").hover(function(){
-    var goto = Number( $(this).attr('data-slide-to') );
-    $("#carousel-example-generic").carousel(goto);  
-});
-
 $(function() {
     $(document.body).on('appear', '.popup-up', function(e, $affected) {
         $(this).addClass("appeared");
