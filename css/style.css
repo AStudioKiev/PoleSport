@@ -204,7 +204,7 @@ a, a:hover, a:focus {
 }
 .logo-holder {
     height: 90px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .credit-info {
     width: 100%;
@@ -229,12 +229,13 @@ a, a:hover, a:focus {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 23px;
 }
 .poetry-text>span:last-child {
     width: 100%;
     text-align: right;
     display: block;
+    margin-top: 20px;
 }
 .poetry-image {
     display: inline-block;
