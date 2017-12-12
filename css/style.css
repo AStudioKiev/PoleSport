@@ -199,11 +199,14 @@ a, a:hover, a:focus {
     padding: 40px 0 40px 30px;
 }
 .blue-block>* {
-    display: inline-block;
+    display: table-cell;
     vertical-align: middle;
 }
+.intro-blue-block span {
+    padding-right: 30px;
+}
 .logo-holder {
-    height: 90px;
+    height: 105px;
     margin-right: 40px;
 }
 .credit-info {
@@ -301,9 +304,10 @@ a, a:hover, a:focus {
 }
 .checks-list li {
     margin: 10px 0;
+    display: table;
 }
 .checks-list li>* {
-    display: inline-block;
+    display: table-cell;
     vertical-align: bottom;
     margin-right: 10px;
 }
@@ -482,13 +486,36 @@ a, a:hover, a:focus {
     max-width: 1080px;
     margin: 0 auto;
 }
-#galleryCarousel .item>img {
-    height: 175px;
+#galleryCarousel .flex-btw>div {
+    height: 235px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#galleryCarousel .flex-btw>div>img {
+    height: 100%;
+}
+#galleryCarouselM {
+    display: none;
+    margin-top: 250px;
+    padding-bottom: 100px;
+}
+#galleryCarouselM .item {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+#galleryCarouselM .flex-btw>div {
+    height: 235px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#galleryCarouselM .flex-btw>div>img {
+    height: 100%;
 }
 .carousel-control {
     opacity: 1;
     width: 50px;
-    margin-top: 63px;
+    margin-top: 89px;
 }
 .carousel-control:focus, .carousel-control:hover {
     color: #fff;
@@ -550,8 +577,11 @@ a, a:hover, a:focus {
     display: table-cell;
     vertical-align: top;
 }
+.timetable-grid>span:nth-child(1) {
+    width: 110px;
+}
 .timetable-grid>span:nth-child(2) {
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 
@@ -563,6 +593,7 @@ a, a:hover, a:focus {
 }
 .question-7 .timetable-grid>span:nth-child(1) {
     width: 155px;
+    padding-right: 7px;
 }
 .question-7 .timetable-grid {
     margin-bottom: 20px;
@@ -614,6 +645,22 @@ a, a:hover, a:focus {
     display: table-cell;
     vertical-align: middle;
     min-height: 139px;
+}
+footer {
+    background-image: url(../img/blue_space.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    min-height: 107px;
+    display: table;
+    font-size: 26px;
+    text-align: center;
+    line-height: 107px;
 }
 /* Appear animation */
 .popup-up {
@@ -922,6 +969,71 @@ a, a:hover, a:focus {
 /* Margins and paddings */
 
 
+/* Styles for navigation */
+.mobile-hidden{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    
+    left: -225px;
+}
+.mobile-visible{
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    
+    left: 0;
+}
+#toggle_nav {
+    cursor: pointer;
+    position: absolute;
+    right: -44px;
+    top: 20px;
+    height: 40px;
+    width: 44px;
+    background-color: #b9d8f0;
+    z-index: 999;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#toggle_nav img {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+#mobile_nav {
+    display: none;
+    position: fixed;
+    top: 50px;
+    width: 225px;
+    padding: 20px 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+#mobile_nav>li {
+    display: block;
+    margin: 7px 0 7px 25px;
+    font-size: 18px;
+}
+#mobile_nav>li>a {
+    text-decoration: none;
+    color: #000;
+}
+/*#mobile_nav>li:hover {
+     border-bottom: 4px solid #40c4c8;
+    -moz-border-image: url(../img/curved.png) 30 round round;
+    -webkit-border-image: url(../img/curved.png) 30 round round; 
+    -o-border-image: url(../img/curved.png) 30 round round;
+    border-image: url(../img/curved.png) 30 round round;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}*/
+/* Styles for navigation */
+
 /* Responsive layout */
 @media screen and (max-width: 1340px) {
     .intro-info-holder {
@@ -931,11 +1043,232 @@ a, a:hover, a:focus {
     .intro-image-holder {
         margin-right: 0;
     }
+    .checks-list {
+        padding: 0 20px;
+    }
+    .more-box {
+        position: static;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 665px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .test_1 .pad-hz-8 {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .test_2 .more-box {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1170px) {
+    #galleryCarousel {
+        display: none;
+    }
+    #galleryCarouselM {
+        display: block;
+    }
 }
 @media screen and (max-width: 1150px) {
     .flex-btw>* {
         display: block;
         margin: 20px auto;
+    }
+    .checks-list {
+        margin: 20px auto;
+    }
+    .test_1 .space-btw>*, .test_2 .space-btw>*, .test_3 .space-btw>* {
+        display: block;
+        margin: 20px auto;
+    }
+    .blue-block {
+        max-width: 100%!important;
+    }
+    .padding-box {
+        padding: 20px 0;
+    }
+    .test_2 .padding-box {
+        padding-bottom: 100px;
+    }
+    .intro-block .intro-image-holder {
+        margin-bottom: 100px;
+    }
+    .test_2 {
+        overflow: visible;
+    }
+    .test_2 .course-text {
+        margin-top: 20px;
+    }
+    .course-image-2 {
+        width: 100%;
+        max-width: 665px;
+        height: 503px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .test_3 .more-box {
+        margin-bottom: 0;
+    }
+    .checks-list {
+        width: 100%;
+        max-width: 665px;
+    }
+    .video-holder {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .gallery-header {
+        text-align: center;
+        padding-left: 0;
+        width: 100%!important;
+    }
+    #galleryCarousel {
+        margin-top: 20px;
+    }
+    .carousel-inner {
+        padding: 0 70px;
+    }
+    .course-text {
+        padding: 0 4%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .blue-block {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1109px) {
+    .convention-grid .contact-box {
+        margin-top: 30px!important;
+    }
+    .convention-grid .course-text {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .logo-holder {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .lg-blue {
+        right: 30px;
+    }
+}
+@media screen and (max-width: 868px) {
+    .logo-holder {
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .credit-info {
+        margin: 0 auto;
+    }
+    .body-wrap {
+        display: none!important;
+    }
+    #mobile_nav {
+        display: block;
+    }
+}
+@media screen and (max-width: 665px) {
+    .course-image-2>img {
+        width: 100%;
+    }
+    .video-holder>* {
+        width: 100%;
+    }
+    .course-image {
+        padding: 0 4%;
+    }
+    .course-image-2 {
+        height: auto;
+        padding: 0 4%;
+    }
+    .poetry-image {
+        width: 100%;
+        max-width: 550px;
+        padding: 0 4%;
+    }
+    .padding-const {
+        padding: 0;
+    }
+    .intro-block .intro-image-holder {
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width: 635px) {
+    .intro-point {
+        display: block;
+        margin: 20px auto;
+    }
+    .intro-blue-block {
+        padding: 0 4%;
+    }
+    .intro-blue-block .logo-holder, .intro-blue-block span {
+        display: block;
+        margin: 20px auto;
+        padding: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+    .question-body {
+        padding: 45px 15px;
+    }
+    .convention-grid {
+        padding: 0 4%;
+    }
+    .convention-grid .lessons-list>li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .registration-cards {
+        padding: 20px 4%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .intro-info-holder {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .font-image {
+        margin-right: 0;
+        padding: 0 4%;
+    }
+    .intro-block .intro-image-holder {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .intro-block .intro-image-holder {
+        margin-bottom: 20px;
+    }
+    .lg-blue {
+        right: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+    }
+    .intro-block .pad-tp-5 {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .lg-blue {
+        top: -40px;
+    }
+    .question-7 {
+        font-size: 13px;
+    }
+    .question-7 .timetable-grid>span:nth-child(1) {
+        width: 106px;
     }
 }
 /* Responsive layout */
