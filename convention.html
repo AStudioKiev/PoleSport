@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Агенство">
+    <meta name="keywords" content="">
+    <title>Astudio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="container-md">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Аттестация</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="atestation-1.html">Аттестация 1 ступень</a></li>
+                                <li><a href="#">Аттестация 2 ступень</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Конвенция</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Мастер Классы и семинары</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Регистрация</a></li>
+                        <li class="active"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    
+    <div class="main"></div>
+    
+    <div class="blue-block intro-blue-block">
+        <div class="blue-block-psevdo"></div>
+        <img class="logo-holder" src="img/logo.png" alt="">
+        <span>Интенсивный курс мастер классов<br> UKRAINIAN POLE Convention”</span>
+    </div>
+    
+    <div class="convention-grid container-md flex-btw">
+        <div class="course-text">
+            <p>Самое ожидаемое мероприятие!<br> (для среднего и продвинутого уровня подготовки)</p>
+
+            <ul class="lessons-list" align="justify">
+                <li>14 часов Мастер классов от ЗВЕЗД Украинского Pole Dance</li>
+                <li>2 дня теории и практики</li>
+                <li>Самые свежие новинки</li>
+            </ul>
+        </div>
+        <div class="contact-box">
+            <div class="box-top"><span>Открыт новый набор на  ДЕВЯТОЙ «UKRAINIAN POLE Convention»</span></div>
+            <div class="box-body">
+                <div><img src="img/time.png" alt="" height="30px"><span>10-11 апреля 2018</span></div>
+                <div><img src="img/price.png" alt="" height="30px"><span>2850 грн<br> 2550 грн<br> (для членов ВФСП)</span></div>
+            </div>
+            <div class="box-bottom"><a href="#">Подать заявку</a></div>
+        </div>
+    </div>
+    <div class="convention-info container-md" align="center">
+         <p class="bold-lg">Мы успешно провели:</p>
+
+        <ul class="convention-info-list">
+            <li>- более 8 конвенций</li>
+            <li>- 80 классов</li>
+            <li>- 40 лекторов</li>
+            <li>- 250 счастливых участников</li>
+        </ul>
+        
+        <p class="regular-md">
+            “UKRAINIAN POLE Convention” - Это Ваш шанс, узнать НОВУЮ  информацию!<br> 
+            Получить ключ к грамотной методике преподавания!<br> 
+            Знаниям элементов, анатомии, физиологии, психологии<br> 
+            спорта не только взрослых, но и детей!<br> 
+        </p>
+
+        <p class="regular-md">9-10 апреля 2018 состоится интенсивный курс мастер классов - <br>ДЕВЯТОЙ «UKRAINIAN POLE Convention»</p>
+
+        <p class="regular-md">Запись открыта!</p>
+        
+        <p class="regular-md">Снова Вас ожидают ИНТЕНСИВНЫХ 14 часов теории и практики от<br> ЗВЕЗД  Украинского poledance!<br>   
+            Целых два дня, Вы будете осваивать новые трюковые элементы, танцевать, получать интересную информацию, и просто, ЗАРЯЖАТЬСЯ МЕГА ЭНЕРГИЕЙ!<br> 
+            В программе:  методика преподавания танца и акробатики на пилоне,  техника безопасности, новые трюковые элементы и комбинации, хореография в PD, стретчинг , и мн. др.
+        </p>
+        
+        <p class="regular-md">Данная программа рассчитана на средний и продвинутый уровни,  для тренеров и спортсменов, которые жаждут новых знаний!)<br> Наши Звезды поделятся с Вами своими секретами!)</p>
+    </div>
+</body>
+    
+<script src="js/mine.js"></script>
+<script>
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
+</script>
+</html>

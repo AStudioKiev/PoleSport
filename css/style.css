@@ -354,6 +354,14 @@ a, a:hover, a:focus {
     display: table-cell;
     vertical-align: middle;
 }
+.box-bottom>a:hover {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    
+    color: #918e8e;
+}
 .more-box {
     width: 100vw;
     font-size: 22px;
@@ -562,9 +570,51 @@ a, a:hover, a:focus {
 
 
 
+.convention-grid {
+    padding: 70px 80px 80px 80px;
+}
+.convention-grid .course-text {
+    padding-left: 0;
+}
+.convention-grid .contact-box {
+    margin-top: -20px;
+}
+.convention-grid .lessons-list>li {
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #efcfbe;
+}
+.convention-info-list {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+.convention-info {
+    padding-bottom: 70px;
+}
+.convention-info .regular-md {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 50px;
+}
 
-
-
+.registration-cards {
+    padding: 30px 56px 80px 56px;
+}
+.registration-cards .box-top {
+    min-height: 139px;
+    width: 100%;
+    display: table;
+}
+.registration-cards .box-top>span {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 139px;
+}
 /* Appear animation */
 .popup-up {
     -webkit-transition: all 550ms ease;
@@ -873,33 +923,19 @@ a, a:hover, a:focus {
 
 
 /* Responsive layout */
-@media screen and (max-width: 1300px) {
-    .fourth-block {
-        overflow-x: hidden;
+@media screen and (max-width: 1340px) {
+    .intro-info-holder {
+        padding: 40px 1% 20px 1%;
+        max-width: 650px;
     }
-    .float-img-1 {
-        margin-left: -703px;
+    .intro-image-holder {
+        margin-right: 0;
     }
-    .float-img-2 {
-        margin-left: -802px;
-    }
-    .float-img-3 {
-        margin-right: -600px;
-    }
-    .float-img-4 {
-        margin-right: -795px;
-    }
-    .articles-float-img-1 {
-        margin-left: -733px;
-    }
-    .articles-float-img-2 {
-        margin-left: -703px;
-    }
-    .articles-float-img-3 {
-        top: -30px;
-    }
-    .articles-float-img-4 {
-        margin-right: -800px;
+}
+@media screen and (max-width: 1150px) {
+    .flex-btw>* {
+        display: block;
+        margin: 20px auto;
     }
 }
 /* Responsive layout */

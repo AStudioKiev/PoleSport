@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Агенство">
+    <meta name="keywords" content="">
+    <title>Astudio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="container-md">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Аттестация</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="atestation-1.html">Аттестация 1 ступень</a></li>
+                                <li><a href="#">Аттестация 2 ступень</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Конвенция</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Мастер Классы и семинары</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Регистрация</a></li>
+                        <li class="active"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    
+    <div class="main"></div>
+    
+    <div class="blue-block intro-blue-block">
+        <div class="blue-block-psevdo"></div>
+        <img class="logo-holder" src="img/logo.png" alt="">
+        <span>Выберите мероприятие</span>
+    </div>
+    
+    <div class="registration-cards container-md flex-btw">
+        <div class="contact-box">
+            <div class="box-top"><span>«АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT – POLE DANCE УКРАИНЫ»<br>(1 ступень)</span></div>
+            <div class="box-body">
+                <div><img src="img/time.png" alt="" height="30px"><span>8-11 февраля 2018</span></div>
+                <div><img src="img/price.png" alt="" height="30px"><span>4200 грн<br> 3800 грн<br> (для членов ВФСП)</span></div>
+            </div>
+            <div class="box-bottom"><a href="#">Подать заявку</a></div>
+        </div>
+        <div class="contact-box">
+            <div class="box-top"><span>«АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT – POLE DANCE УКРАИНЫ»<br> (2 ступень)</span></div>
+            <div class="box-body">
+                <div><img src="img/time.png" alt="" height="30px"><span>октябрь 2018 года</span></div>
+                <div><img src="img/price.png" alt="" height="30px"><span>2850 грн<br> 2550 грн<br> (для членов ВФСП)</span></div>
+            </div>
+            <div class="box-bottom"><a href="#">Подать заявку</a></div>
+        </div>
+        <div class="contact-box">
+            <div class="box-top"><span>ДЕВЯТЫЙ «UKRAINIAN POLE Convention»</span></div>
+            <div class="box-body">
+                <div><img src="img/time.png" alt="" height="30px"><span>10-11 апреля 2018</span></div>
+                <div><img src="img/price.png" alt="" height="30px"><span>2850 грн<br> 2550 грн<br> (для членов ВФСП)</span></div>
+            </div>
+            <div class="box-bottom"><a href="#">Подать заявку</a></div>
+        </div>
+    </div>
+</body>
+    
+<script src="js/mine.js"></script>
+<script>
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
+</script>
+</html>
