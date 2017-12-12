@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Панель администратора"
-AuthUserFile /home/upsf00/upsf.com.ua/www/dev/.htpasswd
-Require valid-user
