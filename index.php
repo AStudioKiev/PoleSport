@@ -1,3 +1,12 @@
+<?php
+
+namespace app;
+
+require_once("admin/DBUtils.php");
+
+$images = DBUtils::getAllImages();
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
