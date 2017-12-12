@@ -242,6 +242,18 @@
         </div>
     </div>
     
+    <!-- Modal -->
+    <div id="galleryLg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="photo-holder"><img src="img/DSC_1306.jpg" alt="" width="100%"></div>
+                </div>
+            </div>
+      </div>
+    </div>
+    
     <div class="gallery-block">
         <div class="blue-block gallery-header">
             <span>Галерея</span>
@@ -256,9 +268,9 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="flex-btw">
-                            <div><img src="img/DSC_1302.jpg" alt=""></div>
-                            <div><img src="img/DSC_1306.jpg" alt=""></div>
-                            <div><img src="img/DSC_1307.jpg" alt=""></div>
+                            <div><img data-toggle="modal" data-target="#galleryLg" src="img/DSC_1302.jpg" alt=""></div>
+                            <div><img data-toggle="modal" data-target="#galleryLg" src="img/DSC_1306.jpg" alt=""></div>
+                            <div><img data-toggle="modal" data-target="#galleryLg" src="img/DSC_1307.jpg" alt=""></div>
                         </div>
                     </div>
                     <div class="item">
@@ -280,21 +292,25 @@
                             <div><img src="img/DSC_1442.jpg" alt=""></div>
                             <div><img src="img/DSC_3271.jpg" alt=""></div>
                             <div><img src="img/DSC_3377.jpg" alt=""></div>
-                            <div><img src="img/DSC_3569.jpg" alt=""></div>
-                            <div><img src="img/DSC_3573.jpg" alt=""></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="flex-btw">
+                            <div><img src="img/DSC_3569.jpg" alt=""></div>
+                            <div><img src="img/DSC_3573.jpg" alt=""></div>
                             <div><img src="img/DSC_3620.jpg" alt=""></div>
-                            <div><img src="img/DSC_3623.jpg" alt=""></div>
-                            <div><img src="img/DSC_3695.jpg" alt=""></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="flex-btw">
                             <div><img src="img/DSC_3651.jpg" alt=""></div>
+                            <div><img src="img/DSC_3623.jpg" alt=""></div>
                             <div><img src="img/DSC_7371.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-btw">
+                            <div><img src="img/DSC_3695.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>

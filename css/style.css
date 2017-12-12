@@ -487,12 +487,20 @@ a, a:hover, a:focus {
     margin: 0 auto;
 }
 #galleryCarousel .flex-btw>div {
-    height: 235px;
+    height: 275px;
+    width: 33%;
+    position: relative;
     vertical-align: middle;
     display: inline-block;
+    overflow: hidden;
 }
 #galleryCarousel .flex-btw>div>img {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    cursor: pointer;
 }
 #galleryCarousel .carousel-control {
     margin-top: 88px;
@@ -541,7 +549,6 @@ a, a:hover, a:focus {
 .carousel-control.right, .carousel-control.left {
     background-image: none;
 }
-
 
 
 
