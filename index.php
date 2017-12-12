@@ -175,13 +175,13 @@
                 </ul>
             </div>
         </div>
-        <div class="container-md space-btw padding-box">
+        <div class="container-md flex-btw padding-box">
             <div class="contact-box zero">
                 <div class="box-top box-top-2"><span>«АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT – POLE DANCE УКРАИНЫ»<br><br> ВТОРАЯ СТУПЕНЬ</span></div>
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>октябрь 2018 года</span></div>
                 </div>
-                <div class="box-bottom"><a href="#">Подать заявку</a></div>
+                <div class="box-bottom"><a href="#" class="hover-inactive">Подать заявку</a></div>
             </div>
             <div class="course-image-2">
                 <img src="img/reading.jpg" alt="" height="100%">
@@ -417,7 +417,7 @@
     </div>
     
     <footer>
-        <a href="#">sdfsdf@gmail.com</a>
+        <a href="#">info.polesport@gmail.com</a>
     </footer>
 </body>
     
