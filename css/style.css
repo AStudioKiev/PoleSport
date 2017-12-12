@@ -496,7 +496,7 @@ a, a:hover, a:focus {
 }
 #galleryCarouselM {
     display: none;
-    margin-top: 250px;
+    margin-top: 50px;
     padding-bottom: 100px;
 }
 #galleryCarouselM .item {
@@ -504,18 +504,27 @@ a, a:hover, a:focus {
     max-width: 1080px;
     margin: 0 auto;
 }
+#galleryCarouselM .item>.flex-btw {
+    display: table;
+    width: 100%;
+}
 #galleryCarouselM .flex-btw>div {
-    height: 235px;
+    display: table-cell;
     vertical-align: middle;
-    display: inline-block;
+    height: 535px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 #galleryCarouselM .flex-btw>div>img {
-    height: 100%;
+    height: auto;
+    max-width: 100%;
 }
-.carousel-control {
-    opacity: 1;
-    width: 50px;
-    margin-top: 89px;
+#galleryCarouselM .carousel-control {
+    display: none;
+}
+#galleryCarouselM .carousel-inner {
+    padding: 0 10px;
 }
 .carousel-control:focus, .carousel-control:hover {
     color: #fff;
@@ -1231,6 +1240,11 @@ footer {
         padding: 20px 4%;
     }
 }
+@media screen and (max-width: 530px) {
+    #galleryCarouselM .flex-btw>div {
+        height: 400px;
+    }
+}
 @media screen and (max-width: 450px) {
     .intro-info-holder {
         padding-left: 15px;
@@ -1258,6 +1272,12 @@ footer {
     }
     .intro-block .pad-tp-5 {
         padding-top: 0;
+    }
+    #galleryCarouselM {
+        padding-bottom: 60px;
+    }
+    #galleryCarouselM .flex-btw>div {
+        height: 300px;
     }
 }
 @media screen and (max-width: 350px) {
