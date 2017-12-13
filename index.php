@@ -107,7 +107,7 @@ $images = DBUtils::getAllImages();
                     </div>
                 </div>
             </div>
-            <div class="intro-image-holder popup-left">
+            <div class="intro-image-holder popup-up">
                 <img src="img/intro_photo.png" alt="" width="100%">
                 <img class="font-image" src="img/font.png" alt="" width="100%">
             </div>
@@ -119,7 +119,7 @@ $images = DBUtils::getAllImages();
             </div>
             <div class="flex-btw padding-const">
                 <div class="poetry-text">
-                    <span class="popup-left">Как же научить, и не навредить?<br> Грамотно объяснить или<br> вдохновить?<br> Надежно страховать,<br> первую помощь оказать?!<br> Все элементы знать,<br> и правильно  исполнять?!<br> Ученика не обижать,<br> этику соблюдать!?<br> Быть на шаг вперед – <br>спортсменов развивать!<br> Если развиваешься –ты!<br> Пополни наши ряды!<br> Стань профессиональном – <br>осуществи мечты!</span>
+                    <span class="popup-up">Как же научить, и не навредить?<br> Грамотно объяснить или<br> вдохновить?<br> Надежно страховать,<br> первую помощь оказать?!<br> Все элементы знать,<br> и правильно  исполнять?!<br> Ученика не обижать,<br> этику соблюдать!?<br> Быть на шаг вперед – <br>спортсменов развивать!<br> Если развиваешься –ты!<br> Пополни наши ряды!<br> Стань профессиональном – <br>осуществи мечты!</span>
                     <span>Ольга Полищук</span>
                 </div>
                 <div class="poetry-image"><img src="img/poetry_girls.jpg" alt="" width="100%"></div>
@@ -155,9 +155,9 @@ $images = DBUtils::getAllImages();
                 <li><img src="img/checks.png" alt="" height="30px" class="popup-up popup-delayed-4"><span class="popup-up">Выпущено более 100 профессиональных инструкторов</span></li>
                 <li><img src="img/checks.png" alt="" height="30px" class="popup-up popup-delayed-4"><span class="popup-up">Проведено более 150 часов обучения</span></li>
                 
-                <div class="more-box popup-right"><a href="atestation-1.html"><span>Узнать подробнее...</span></a></div>
+                <div class="more-box popup-up"><a href="atestation-1.html"><span>Узнать подробнее...</span></a></div>
             </ul>
-            <div class="contact-box popup-left">
+            <div class="contact-box popup-up">
                 <div class="box-top"><span>Открыт новый набор на  «АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT – POLE DANCE УКРАИНЫ»</span></div>
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>8-11 февраля 2018</span></div>
@@ -192,7 +192,7 @@ $images = DBUtils::getAllImages();
                 </div>
                 <div class="box-bottom"><a href="#" class="hover-inactive">Подать заявку</a></div>
             </div>
-            <div class="course-image-2 popup-left">
+            <div class="course-image-2 popup-up">
                 <img src="img/reading.jpg" alt="" height="100%">
                 <div class="more-box"><a href="atestation-2.html"><span>Узнать подробнее...</span></a></div>
             </div>
@@ -226,9 +226,9 @@ $images = DBUtils::getAllImages();
                 <li><img src="img/checks.png" alt="" height="30px" class="popup-up popup-delayed-4"><span class="popup-up">40 лекторов</span></li>
                 <li><img src="img/checks.png" alt="" height="30px" class="popup-up popup-delayed-4"><span class="popup-up">250 счастливых участников</span></li>
                 
-                <div class="more-box popup-right"><a href="convention.html"><span>Узнать подробнее...</span></a></div>
+                <div class="more-box popup-up"><a href="convention.html"><span>Узнать подробнее...</span></a></div>
             </ul>
-            <div class="contact-box popup-left">
+            <div class="contact-box popup-up">
                 <div class="box-top"><span>Открыт новый набор на  ДЕВЯТОЙ «UKRAINIAN POLE Convention»</span></div>
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>10-11 апреля 2018</span></div>
