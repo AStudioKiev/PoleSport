@@ -876,6 +876,24 @@ footer {
     -moz-transition-delay: 0.5s;
     transition-delay: 0.5s;
 }
+.popup-delayed-6 {
+     -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+.popup-delayed-7 {
+     -webkit-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+}
+.popup-delayed-8 {
+     -webkit-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
 /* Appear animation */
 
 
@@ -1320,6 +1338,9 @@ footer {
     }
     #galleryCarouselM .flex-btw>div {
         height: 300px;
+    }
+    footer {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 350px) {
