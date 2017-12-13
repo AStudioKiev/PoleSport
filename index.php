@@ -257,7 +257,7 @@ $images = DBUtils::getAllImages();
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="photo-holder"><img id="galleryLgImg" src="" alt="" width="100%"></div>
+                    <div class="photo-holder"><img id="galleryLgImg" src="" alt="" height="100%"></div>
                 </div>
             </div>
       </div>
