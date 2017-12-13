@@ -9,9 +9,6 @@ body {
     color: #00252e;
     overflow-x: hidden;
 }
-body>* {
-    overflow-x: hidden;
-}
 a, a:hover, a:focus {
     text-decoration: none;
     color: inherit;
@@ -536,20 +533,17 @@ a, a:hover, a:focus {
     height: auto;
     max-width: 100%;
 }
-#galleryCarouselM .carousel-control {
-    display: none;
-}
 #galleryCarouselM .carousel-inner {
     padding: 0 10px;
 }
-.carousel-control:focus, .carousel-control:hover {
+#galleryCarousel .carousel-control:focus, #galleryCarousel .carousel-control:hover {
     color: #fff;
     text-decoration: none;
     filter: none;
     outline: 0;
     opacity: 1;
 }
-.carousel-control.right, .carousel-control.left {
+#galleryCarousel .carousel-control.right, #galleryCarousel .carousel-control.left {
     background-image: none;
 }
 
