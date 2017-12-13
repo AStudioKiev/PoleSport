@@ -163,7 +163,7 @@ $images = DBUtils::getAllImages();
                     <div><img src="img/time.png" alt="" height="30px"><span>8-11 февраля 2018</span></div>
                     <div><img src="img/price.png" alt="" height="30px"><span>4200 грн<br>3800 грн<br>(для членов ВФСП)</span></div>
                 </div>
-                <div class="box-bottom"><a href="#">Подать заявку</a></div>
+                <div class="box-bottom"><a href="https://goo.gl/forms/Erl3uMzZpm6xDSXx1" target="_blank">Подать заявку</a></div>
             </div>
         </div>
     </div>
@@ -190,7 +190,7 @@ $images = DBUtils::getAllImages();
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>октябрь 2018 года</span></div>
                 </div>
-                <div class="box-bottom"><a href="#" class="hover-inactive">Подать заявку</a></div>
+                <div class="box-bottom"><a href="#" target="_blank" class="hover-inactive">Подать заявку</a></div>
             </div>
             <div class="course-image-2 popup-up">
                 <img src="img/reading.jpg" alt="" height="100%">
@@ -234,7 +234,7 @@ $images = DBUtils::getAllImages();
                     <div><img src="img/time.png" alt="" height="30px"><span>10-11 апреля 2018</span></div>
                     <div><img src="img/price.png" alt="" height="30px"><span>2850 грн<br> 2550 грн<br> (для членов ВФСП)</span></div>
                 </div>
-                <div class="box-bottom"><a href="#">Подать заявку</a></div>
+                <div class="box-bottom"><a href="https://goo.gl/forms/XvXMOeLPS8Noff6r2" target="_blank">Подать заявку</a></div>
             </div>
         </div>
     </div>
@@ -245,9 +245,9 @@ $images = DBUtils::getAllImages();
         </div>
         
         <div class="container-md registration-btns-holder" align="center">
-            <button class="red-btn popup-up popup-delayed-2"><a href="atestation-1.html">Аттестация 1 ступень</a></button>
+            <button class="red-btn popup-up popup-delayed-2"><a href="https://goo.gl/forms/Erl3uMzZpm6xDSXx1" target="_blank">Аттестация 1 ступень</a></button>
             <button class="red-btn popup-up popup-delayed-4"><a href="atestation-2.html">Аттестация 2 ступень</a></button>
-            <button class="red-btn popup-up popup-delayed-6"><a href="convention.html">Конвенция</a></button>
+            <button class="red-btn popup-up popup-delayed-6"><a href="https://goo.gl/forms/XvXMOeLPS8Noff6r2" target="_blank">Конвенция</a></button>
         </div>
     </div>
     
