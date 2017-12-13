@@ -670,6 +670,25 @@ a, a:hover, a:focus {
     vertical-align: middle;
     min-height: 139px;
 }
+
+.modal-dialog {
+    display: table;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5vh 0;
+}
+.modal-content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 80vh;
+    text-align: center;
+}
+.modal-content .photo-holder {
+    height: 80vh;
+}
 footer {
     background-image: url(../img/blue_space.jpg);
     background-position: center;
