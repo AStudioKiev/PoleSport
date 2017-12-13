@@ -53,25 +53,3 @@ function showNav() {
         nav.classList.add('mobile-hidden');
     }
 }
-function showAsk() {
-    var nav = document.getElementById("ask_popup");
-
-    if (nav.classList.contains('ask-hidden')) {
-        nav.classList.remove('ask-hidden');
-        nav.classList.add('ask-visible');
-    } else {
-        nav.classList.remove('ask-visible');
-        nav.classList.add('ask-hidden');
-    }
-}
-
-jQuery(function($){
-    var nav = document.getElementById("ask_popup");
-    $('body').click(function (event) {
-        var el = $(event.target);
-        if(!el.hasClass('ask-btn')) {
-            nav.classList.remove('ask-visible');
-            nav.classList.add('ask-hidden');
-        }
-    });
-});

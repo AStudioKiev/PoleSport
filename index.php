@@ -257,7 +257,7 @@ $images = DBUtils::getAllImages();
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="photo-holder"><img id="galleryLgImg" src="img/DSC_1306.jpg" alt="" width="100%"></div>
+                    <div class="photo-holder"><img id="galleryLgImg" src="" alt="" width="100%"></div>
                 </div>
             </div>
       </div>
@@ -288,13 +288,17 @@ $images = DBUtils::getAllImages();
                         if(($i + 1) % 3 == 0 || $i == count($images) - 1)
                             echo '</div></div>';
                     }
+
+                    if(count($images) > 3)
+                    {
+                        echo '<a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
+                                <img src="img/arrow_lt.png" alt="">
+                              </a>
+                              <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
+                                <img src="img/arrow_rt.png" alt="">
+                              </a>';
+                    }
                 ?>
-                <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
-                    <img src="img/arrow_lt.png" alt="">
-                </a>
-                <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
-                    <img src="img/arrow_rt.png" alt="">
-                </a>
             </div>
             
             <div id="galleryCarouselM" class="carousel slide" data-ride="carousel">
