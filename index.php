@@ -129,7 +129,7 @@ $images = DBUtils::getAllImages();
     
     <div class="info-block test_1">
         <div class="blue-block">
-            <span>Обучающий курс для тренеров<br> «АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT-POLE DANCE УКРАИНЫ»,<br> 1 ступень!</span>
+            <span class="popup-up">Обучающий курс для тренеров<br> «АТТЕСТАЦИЯ ИНСТРУКТОРОВ POLE SPORT-POLE DANCE УКРАИНЫ»,<br> 1 ступень!</span>
         </div>
         <div class="container-md flex-btw">
             <div class="course-image popup-up"><img src="img/girls.jpg" alt="" width="100%"></div>
