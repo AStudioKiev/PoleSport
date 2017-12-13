@@ -257,7 +257,7 @@ $images = DBUtils::getAllImages();
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="photo-holder"><img src="img/DSC_1306.jpg" alt="" width="100%"></div>
+                    <div class="photo-holder"><img id="galleryLgImg" src="img/DSC_1306.jpg" alt="" width="100%"></div>
                 </div>
             </div>
       </div>
@@ -275,8 +275,7 @@ $images = DBUtils::getAllImages();
             
             <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <?php
-
+                <?php
                     for($i = 0; $i < count($images); $i++)
                     {
                         if($i == 0)
@@ -284,14 +283,12 @@ $images = DBUtils::getAllImages();
                         elseif($i % 3 == 0)
                             echo '<div class="item"><div class="flex-btw">';
 
-                        echo '<div><img data-toggle="modal" data-target="#galleryLg" src="data:image;base64,' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '></div>';
+                        echo '<div><img class="gallery-img" data-toggle="modal" data-target="#galleryLg" src="data:image;base64,' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '></div>';
 
                         if(($i + 1) % 3 == 0 || $i == count($images) - 1)
                             echo '</div></div>';
                     }
-
-                    ?>
-
+                ?>
                 <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
                     <img src="img/arrow_lt.png" alt="">
                 </a>
@@ -302,101 +299,18 @@ $images = DBUtils::getAllImages();
             
             <div id="galleryCarouselM" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1302.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1306.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1307.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1326.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1453.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1455.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1477.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1483.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3525.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_1442.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3271.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3377.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3569.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3573.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3620.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3623.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3695.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_3651.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex-btw">
-                            <div><img src="img/DSC_7371.jpg" alt=""></div>
-                        </div>
-                    </div>
+                <?php
+                    for($i = 0; $i < count($images); $i++)
+                    {
+                        if($i == 0)
+                            echo '<div class="item active">';
+                        else
+                            echo '<div class="item">';
+                        echo '<div class="flex-btw"><div>';
+                        echo '<img src="data:image;base64,' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '>';
+                        echo '</div></div></div>';
+                    }
+                ?>
                 </div>
 
                 <a class="left carousel-control" href="#galleryCarouselM" data-slide="prev">
@@ -415,6 +329,7 @@ $images = DBUtils::getAllImages();
 </body>
     
 <script src="js/mine.js"></script>
+
 <script>
     $('ul.nav li.dropdown').hover(function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
@@ -422,4 +337,12 @@ $images = DBUtils::getAllImages();
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     });
 </script>
+
+<script>
+    $('.gallery-img').on('click', function () {
+       var src = $(this).attr('src');
+       $('#galleryLgImg').attr('src', src);
+    });
+</script>
+
 </html>
