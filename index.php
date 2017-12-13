@@ -299,7 +299,7 @@ $images = DBUtils::getAllImages();
                               </a>';
                     }
                 ?>
-            </div>
+                </div>
             </div>
             
             <div id="galleryCarouselM" class="carousel slide" data-ride="carousel">

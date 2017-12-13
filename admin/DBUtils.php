@@ -135,16 +135,21 @@ class DBUtils
 
     public static function deleteImage($id)
     {
-        $mysqli = DBUtils::getConnection();
-        $query = "DELETE FROM images WHERE id=$id;";
+        $res = unlink(DBUtils::getImage($id)->getSrc());
 
-        if($mysqli->query($query))
-            $result = true;
+        if($res == true)
+        {
+            $mysqli = DBUtils::getConnection();
+            $query = "DELETE FROM images WHERE id=$id;";
+
+            if($mysqli->query($query))
+                $result = true;
+            else
+                $result = false;
+            $mysqli->close();
+        }
         else
-            $result = false;
-        $mysqli->close();
-
-        unlink(DBUtils::getImage($id)->getSrc());
+            $result = '<h1 style="color:red">Не удалось удалить!</h1>';
 
         return $result;
     }
