@@ -245,9 +245,9 @@ $images = DBUtils::getAllImages();
         </div>
         
         <div class="container-md registration-btns-holder" align="center">
-            <button class="red-btn"><a href="#">Аттестация 1 ступень</a></button>
-            <button class="red-btn"><a href="#">Аттестация 2 ступень</a></button>
-            <button class="red-btn"><a href="#">Конвенция</a></button>
+            <button class="red-btn"><a href="atestation-1.html">Аттестация 1 ступень</a></button>
+            <button class="red-btn"><a href="atestation-2.html">Аттестация 2 ступень</a></button>
+            <button class="red-btn"><a href="convention.html">Конвенция</a></button>
         </div>
     </div>
     
