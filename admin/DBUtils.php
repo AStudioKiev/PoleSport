@@ -67,20 +67,33 @@ class DBUtils
     {
         if(getimagesize($src["tmp_name"]) !== false)
         {
-            $image = $src['tmp_name'];
-            $image = file_get_contents($image);
-            $image = base64_encode($image);
+            $str = '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789';
+            $newName = '';
 
-            $mysqli = DBUtils::getConnection();
-            $query = "INSERT INTO images (`src`, `alt`) VALUES ('$image', '$alt');";
+            for ($i = 0; $i < 22; $i++)
+                $newName .= $str[mt_rand(0, 72)];
 
-            if ($mysqli->query($query))
-                $result = true;
+            $newName .= substr($src['name'], strrpos($src['name'], '.'));
+            $path = 'img/' . $newName;
+
+            $image = file_get_contents($src['tmp_name']);
+            $res = file_put_contents($path, $image);
+
+            if($res !== false)
+            {
+                $mysqli = DBUtils::getConnection();
+                $query = "INSERT INTO images (`src`, `alt`) VALUES ('$path', '$alt');";
+
+                if ($mysqli->query($query))
+                    $result = true;
+                else
+                    $result = '<h1 style="color:red">' . $mysqli->error . '</h1>';
+
+                $mysqli->close();
+                return $result;
+            }
             else
-                $result = '<h1 style="color:red">' . $mysqli->error . '</h1>';
-
-            $mysqli->close();
-            return $result;
+                return '<h1 style="color:red">Не удалось сохранить файл</h1>';
         }
         else
             return '<h1 style="color:red">Файл не являеться картинкой</h1>';
@@ -96,14 +109,17 @@ class DBUtils
         {
             if(getimagesize($src["tmp_name"]) !== false)
             {
-                $image = $src['tmp_name'];
-                $image = file_get_contents($image);
-                $image = base64_encode($image);
+                $image = file_get_contents($src['tmp_name']);
+                $img = DBUtils::getImage($id);
+                $res = file_put_contents($img->getSrc(), $image);
 
-                $query = "UPDATE images SET alt = '$alt', src='$image' WHERE id=$id;";
+                if($res !== false)
+                    $query = "UPDATE images SET alt = '$alt' WHERE id=$id;";
+                else
+                    return '<h1 style="color:red">Файл не являеться картинкой</h1>';
             }
             else
-                return '<h1 style="color:red">Файл не являеться картинкой</h1>';
+                return '<h1 style="color:red">Не удалось обновить файл</h1>';
         }
 
         $mysqli = DBUtils::getConnection();
@@ -126,8 +142,10 @@ class DBUtils
             $result = true;
         else
             $result = false;
-
         $mysqli->close();
+
+        unlink(DBUtils::getImage($id)->getSrc());
+
         return $result;
     }
 }

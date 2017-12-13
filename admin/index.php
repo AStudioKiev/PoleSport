@@ -74,7 +74,7 @@ $images = DBUtils::getAllImages();
     <tr>
         <td><?=$image->getID();?></td>
         <td><?=$image->getAlt();?></td>
-        <td><img width="100px" height="100px" src="data:image;base64,<?=$image->getSrc();?>"></td>
+        <td><img width="100px" height="100px" src="<?=$image->getSrc();?>"></td>
         <td><a href="edit-image.php?id=<?=$image->getID();?>">Редактировать</a></td>
         <td class="delete-image" data-toggle="modal" data-target="#myModal" data-id="<?=$image->getID();?>">Удалить</td>
     </tr>

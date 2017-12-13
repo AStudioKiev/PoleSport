@@ -40,10 +40,11 @@ $image = DBUtils::getImage($_GET['id']);
 
         <div class="img-block">
             <label>Текущее изображение</label>
-            <img width="50%" height="20%" src="data:image;base64,<?=$image->getSrc();?>">
+            <img width="50%" height="20%" src="<?=$image->getSrc();?>">
         </div>
-        <!-- 10MB limit -->
-        <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+
+        <!-- 30MB limit -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="30000000" />
         <input type="file" id="img" name="img">
 
         <input type="hidden" id="data-id" name="data-id" value="<?=$image->getID()?>">

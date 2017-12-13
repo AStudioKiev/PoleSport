@@ -283,7 +283,7 @@ $images = DBUtils::getAllImages();
                         elseif($i % 3 == 0)
                             echo '<div class="item"><div class="flex-btw">';
 
-                        echo '<div><img class="gallery-img" data-toggle="modal" data-target="#galleryLg" src="data:image;base64,' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '></div>';
+                        echo '<div><img class="gallery-img" data-toggle="modal" data-target="#galleryLg" src="admin/' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '></div>';
 
                         if(($i + 1) % 3 == 0 || $i == count($images) - 1)
                             echo '</div></div>';
@@ -300,6 +300,7 @@ $images = DBUtils::getAllImages();
                     }
                 ?>
             </div>
+            </div>
             
             <div id="galleryCarouselM" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -311,7 +312,7 @@ $images = DBUtils::getAllImages();
                         else
                             echo '<div class="item">';
                         echo '<div class="flex-btw"><div>';
-                        echo '<img src="data:image;base64,' . $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '>';
+                        echo '<img src="admin/'. $images[$i]->getSrc() . '" alt=' . $images[$i]->getAlt() . '>';
                         echo '</div></div></div>';
                     }
                 ?>
@@ -346,6 +347,13 @@ $images = DBUtils::getAllImages();
     $('.gallery-img').on('click', function () {
        var src = $(this).attr('src');
        $('#galleryLgImg').attr('src', src);
+    });
+</script>
+
+<script>
+    $('#galleryCarousel').carousel({
+        pause: true,
+        interval: false
     });
 </script>
 
