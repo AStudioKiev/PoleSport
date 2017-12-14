@@ -39,9 +39,9 @@ $images = DBUtils::getAllImages();
         <li class="active"><a href="index.php">Главная</a></li>
         <li><a href="atestation-1.html">Аттестация 1 ступень</a></li>
         <li><a href="atestation-2.html">Аттестация 2 ступень</a></li>
-        <li><a href="convention.html">Мастер Классы и семинары</a></li>
+        <li><a href="convention.html">Конвенция</a></li>
         <li class="active"><a href="registration.html">Регистрация</a></li>
-        <li class="active"><a href="#" class="scroll">Контакты</a></li>
+        <li class="active"><a href="#contacts" class="scroll">Контакты</a></li>
 
         <div id="toggle_nav" onclick="showNav();"><img src="img/menu-button.svg" alt=""></div>
     </ul>
@@ -76,7 +76,7 @@ $images = DBUtils::getAllImages();
                             </ul>
                         </li>
                         <li class="active"><a href="registration.html">Регистрация</a></li>
-                        <li class="active"><a href="#" class="scroll">Контакты</a></li>
+                        <li class="active"><a href="#contacts" class="scroll">Контакты</a></li>
                     </ul>
                 </div>
             <!-- /.container-fluid -->
@@ -196,7 +196,7 @@ $images = DBUtils::getAllImages();
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>октябрь 2018 года</span></div>
                 </div>
-                <div class="box-bottom"><a href="#" target="_blank" class="hover-inactive">Подать заявку</a></div>
+                <div class="box-bottom"><a target="_blank" class="hover-inactive">Подать заявку</a></div>
             </div>
             <div class="course-image-2 popup-up">
                 <img src="img/reading.jpg" alt="" height="100%">
@@ -235,7 +235,7 @@ $images = DBUtils::getAllImages();
                 <div class="more-box popup-up"><a href="convention.html"><span>Узнать подробнее...</span></a></div>
             </ul>
             <div class="contact-box popup-up">
-                <div class="box-top"><span>Открыт новый набор на  ДЕВЯТОЙ «UKRAINIAN POLE Convention»</span></div>
+                <div class="box-top"><span>Открыт новый набор на ДЕВЯТУЮ «UKRAINIAN POLE Convention»</span></div>
                 <div class="box-body">
                     <div><img src="img/time.png" alt="" height="30px"><span>10-11 апреля 2018</span></div>
                     <div><img src="img/price.png" alt="" height="30px"><span>2850 грн<br> 2550 грн<br> (для членов ВФСП)</span></div>
@@ -335,7 +335,7 @@ $images = DBUtils::getAllImages();
     </div>
     
     <footer>
-        <a href="#">info.polesport@gmail.com</a>
+        <a id="contacts">info.polesport@gmail.com</a>
     </footer>
 </body>
     
