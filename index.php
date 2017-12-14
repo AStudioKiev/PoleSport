@@ -20,6 +20,12 @@ $images = DBUtils::getAllImages();
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="theme-color" content="#ffffff">
     
+    <style type="text/css" media="screen, print">
+        @font-face {
+          font-family: "Impact";
+          src: url("fonts/ImpactRegular.ttf");
+        }
+    </style>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
