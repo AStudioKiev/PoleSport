@@ -276,7 +276,7 @@ $images = DBUtils::getAllImages();
         
         <div class="container-md pad-tp-10">
             <div class="video-holder popup-up popup-delayed-4">
-                <iframe width="648px" height="350px" src="https://www.youtube.com/embed/dIknlub6lEc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="648px" height="350px" src="https://www.youtube.com/embed/z8kZHXtaxgw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
             
             <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
